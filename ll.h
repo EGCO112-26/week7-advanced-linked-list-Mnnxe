@@ -134,15 +134,15 @@ void printList( LLPtr currentPtr )
       puts( "List is empty.\n" );
    } // end if
    else {
-      puts( "The list is:" );
+      //puts( "The list is:" );
 
       // while not the end of the list
       while ( currentPtr->nextPtr!= NULL ) {
-         printf( "%d %s --> ", currentPtr->data , currentPtr->name);
+         printf( "%d %s -->", currentPtr->data , currentPtr->name);
          currentPtr = currentPtr->nextPtr;
       } // end while
 
-      printf( "%d %s --> NULL\n",currentPtr->data, currentPtr->name );
+      printf( "%d %s -->NULL\n",currentPtr->data, currentPtr->name );
        
 
      
@@ -160,11 +160,11 @@ void printListR( LLPtr currentPtr){
       
       // while not the end of the list
       while ( currentPtr->pPtr!= NULL ) {
-         printf( "%d %s --> ", currentPtr->data ,currentPtr->name );
+         printf( "%d %s -->", currentPtr->data ,currentPtr->name );
          currentPtr = currentPtr->pPtr;
       } // end while
       
-      printf( "%d %s --> NULL\n",currentPtr->data, currentPtr->name );
+      printf( "%d %s -->NULL\n",currentPtr->data, currentPtr->name );
    }
 }
 void ClearNode( LLPtr currentPtr){
